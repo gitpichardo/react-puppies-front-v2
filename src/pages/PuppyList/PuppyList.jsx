@@ -1,4 +1,5 @@
 import './PuppyList.css'
+import PuppyCard from '../../components/PuppyCard'
 
 const PuppyList = (props) => {
   return (
@@ -9,9 +10,10 @@ const PuppyList = (props) => {
 
       <ul>
         {props.puppies.map((puppy) => (
-          <li key={puppy._id}>
-            {puppy.name}
-          </li>
+          <PuppyCard 
+            puppy={puppy}
+            key={puppy._id}
+          />
         ))}
       </ul>
 
