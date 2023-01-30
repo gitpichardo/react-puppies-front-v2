@@ -13,6 +13,7 @@ const PuppyList = (props) => {
           <PuppyCard 
             puppy={puppy}
             key={puppy._id}
+            handleRemovePuppy={props.handleRemovePuppy}
           />
         ))}
       </ul>

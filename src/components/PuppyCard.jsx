@@ -1,11 +1,11 @@
 import PuppyIcon from "./PuppyIcon"
 
-const PuppyCard = ({puppy}) => {
+const PuppyCard = ({puppy, handleRemovePuppy}) => {
 
   return(
     <li>
       <section>
-        <button>
+        <button onClick={() => handleRemovePuppy(puppy._id)}>
           X
         </button>
       </section>

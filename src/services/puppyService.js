@@ -16,8 +16,16 @@ const create = async (formData) => {
   return res.json()
 }
 
+const deletePuppy = async (id) => {
+  const res = await fetch(`${BASE_URL}/${id}`, {
+    method: 'DELETE'
+  })
+  return res.json()
+}
+
 export {
   index,
   create,
+  deletePuppy as delete,
 
 }
