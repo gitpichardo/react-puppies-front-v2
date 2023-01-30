@@ -2,6 +2,7 @@ import PuppyLogo from '../../assets/animations/puppy-logo.riv'
 import { useRive } from '@rive-app/react-canvas'
 
 const Landing = () => {
+  // Rive
   const { RiveComponent } = useRive({
     src: PuppyLogo,
     autoplay: true,
